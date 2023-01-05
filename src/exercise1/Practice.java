@@ -27,12 +27,7 @@ public class Practice {
 	public static void main(String[] args) {
 		
 		Practice data = new Practice();
-		
-		System.out.println("This is a int data type: " + data.getOne());
-		System.out.println("This is a double data type: " + data.getTwo());
-		System.out.println("This is a float data type: " + data.getThree());
-		System.out.println("This is a char data type: " + data.getFour());
-		System.out.println("This is a boolean data type: " + data.getBool());
+		data.execute();
 	}
 	
 	/**
@@ -71,8 +66,16 @@ public class Practice {
 	 * getter for the boolean variable
 	 * @return
 	 */
-	public boolean getBool() {
+	public boolean isBool() {
 		return trueOrFalse;
+	}
+	
+	public void execute() {
+		System.out.println("This is a int data type: " + getOne());
+		System.out.println("This is a double data type: " + getTwo());
+		System.out.println("This is a float data type: " + getThree());
+		System.out.println("This is a char data type: " + getFour());
+		System.out.println("This is a boolean data type: " + isBool());
 	}
 
 }
